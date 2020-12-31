@@ -227,6 +227,11 @@ def has_path(t, word):
     """
     assert len(word) > 0, 'no path for empty word.'
     "*** YOUR CODE HERE ***"
+    if len(word) == 1 and label(t) == word[0]:
+        return True
+    if label(t) == word[0] and len(word) > 1:
+        return any([has_path(b, word[1:]) for b in branches(t)])
+    return False
 
 # Tree ADT
 
@@ -292,4 +297,3 @@ def copy_tree(t):
     5
     """
     return tree(label(t), [copy_tree(b) for b in branches(t)])
-
