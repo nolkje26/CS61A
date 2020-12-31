@@ -1,4 +1,4 @@
-# [CS61A](https://cs61a.org/articles/about.html)
+# UC Berkeley [CS61A](https://cs61a.org/articles/about.html)
 
 ## Overview
 The CS 61 series is an introduction to computer science, with particular emphasis on software and on machines from a programmer's point of view.
